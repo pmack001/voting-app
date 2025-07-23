@@ -5,6 +5,6 @@ function vote(option) {
 }
 
 socket.on('updateVotes', (votes) => {
-    document.getElementById('countA').textContent = votes.optionA;
-    document.getElementById('countB').textContent = votes.optionB;
+    document.getElementById('countA').textContent = votes.Guilty;
+    document.getElementById('countB').textContent = votes.NotGuilty;
 });
