@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vote for Your Favorite Option</h1>
+    <button onclick="vote('optionA')">Option A</button>
+    <button onclick="vote('optionB')">Option B</button>
+
+    <h2>Live Results</h2>
+    <p>Option A: <span id="countA">0</span></p>
+    <p>Option B: <span id="countB">0</span></p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
